@@ -49,16 +49,28 @@ body{
     background: var(--bg);
 }
 
-section{
+section {
 padding: 2rem 7%
+}
+.heading {
+text-align: center;
+color: #fff;
+text-transform: uppercase;
+padding-bottom: 3.5rem;
+font-size: 4rem;
+}
+.heading span{
+    color: var(--main-color);
+    text-transform:uppercase;
+
 }
 
 
 .btn{
-    margin-top: 1rem;
+    margin-top: 2.5rem;
     display: inline-block;
-    padding:.7rem 3rem;
-    font-sixe: 1.7rem;
+    padding:.9rem 3rem;
+    font-size: 1.7rem;
     color: #fff;
     background: var(--main-color);
     cursor: pointer;
@@ -84,7 +96,7 @@ padding: 2rem 7%
 
 
 .header .navbar a{
-    margin: 0 1 rem;
+    margin: 0 1rem;
     font-size : 1.6rem;
     color: white;
 }
@@ -119,7 +131,7 @@ padding: 2rem 7%
     transform-origin: top;
 }
 .header .search-form.active{
-    transform: scale(1);
+    transform: scaleY(1);
 }
 
 
@@ -132,7 +144,7 @@ padding: 2rem 7%
     text-transform: none;
 }
 
-.header .search-form .label{
+.header .search-form label{
     cursor: pointer;
     font-size: 2.2rem;
     margin-right: 1.5rem;
@@ -145,12 +157,13 @@ padding: 2rem 7%
 
 .header .cart-items-container {
     position: absolute;
-    top:100%;
-    right: 100%;
-    height: calc(100vh -9.5rem);
-    width: 35rem;
+    top:105%;
+    right: -100%;
+    height: calc(100vh - 9.5rem);
+    width: 30rem;
     background: #fff;
-    padding: 0 1.5rem;
+    font-size: 1.5rem;
+    padding:  1.5rem;
 }
 
 .header .cart-items-container.active{
@@ -165,16 +178,25 @@ padding: 2rem 7%
     gap: 1.5rem;
 }
 
-.header .cart-items-container .cart-items .fa-times{
-    position: relative
+.header .cart-items-container .cart-items .fas fa-times{
+    position: relative;
     top: 1rem;
     right: irem;
-    font-size; 2rem;
+    font-size: 2rem;
     cursor: pointer;
     color: var(--black);
 }
 
-.header .cart-items-container .cart-items .fa-times:hover{
+.header .cart-items-container img{
+    width: 100px;
+    height: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 6rem;
+}
+
+.header .cart-items-container .cart-items .fas fa-times:hover{
     color:var(--main-color);
 }
 
@@ -184,12 +206,12 @@ padding: 2rem 7%
 
 .header .cart-items-container .cart-items .content h3{
     font-size: 2rem;
-    color:var(--black)
-    padding-bottom: .5rem
+    color:var(--black);
+    padding-bottom: .5rem;
 }
 
 .header .cart-items-container .cart-items .content .price{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color:var(--main-color);
 
 }
@@ -202,9 +224,13 @@ padding: 2rem 7%
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: url(../image/home-img.jpeg) no-repeat;
+    background: url() no-repeat;
     background-size: cover;
     background-position: center;;
+}
+
+.home .content{
+    max-width:60rem;
 }
 
 .home .content h3{
@@ -218,7 +244,7 @@ padding: 2rem 7%
     font-weight: lighter;
     line-height: 1.8;
     padding: 1rem 0;
-    color: #fff;
+    color: #eee;
 }
 
 
@@ -228,17 +254,6 @@ padding: 2rem 7%
 
 
 
-
-
-
-
-
-
-
-
-
-
-*/ media queries */
 @media (max-width:991px){
 
     html{
@@ -250,9 +265,9 @@ padding: 2rem 7%
     } 
    
 section{
-    padding: 2rem 7%
+    padding: 2rem;
     }
-        
+}    
     
 @media (max-width:768px){
 
@@ -265,7 +280,7 @@ section{
         top:100%; right: -100%;
         background: #fff;
         width: 30rem;
-        height: calc(100vh -9.5rem);
+        height: calc(100vh - 9.5rem);
     
     }
  
@@ -276,33 +291,36 @@ section{
         color:var(--black);
         display: block;
         margin: 1.5rem;
-        padding: 1.5rem;
+        padding: 0.5rem;
         font-size: 2rem;
     }
-}       
+      
 
 .header .search-form{
     width: 90%;
-    right: 0;
+    right: 2rem;
 }
-
-@media (max-width:450px){
-
-    html{
-        font-size: 55%;
-    } 
-}       
+     
 
 .home{
     background-position: left;
     justify-content: center;
+    text-align: center;
 }
 
-.home.content h3{
+.home .content h3{
     font-size: 4.5rem;
 }
 
 
-.home.content p{
+.home .content p{
     font-size: 1.5rem;
+}
+
+}
+
+@media (max-width:450px){
+    html{
+        font-size: 50%;
+    }
 }
