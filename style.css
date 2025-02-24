@@ -339,7 +339,7 @@ font-size: 4rem;
     height: 5rem;
     width: 5rem;
     line-height: 5rem;
-    font-size: 2rem;
+    font-size: 10rem;
     border: var(--border);
     color: #fff ;
     margin: .3rem;
@@ -351,7 +351,7 @@ font-size: 4rem;
 
 
 .products .box-container .box .image{
-    padding: 2.5rem 0;
+    padding: 2.5rem;
 }
 
 .products .box-container .box .image img{
@@ -360,11 +360,16 @@ font-size: 4rem;
 
 
 
-.products .box-container .box .content .stars{
-    padding: 1.5rem;
+.products .box-container .box .content h3{
+    color: #fff;
+    font-size: 2.5rem;
 }
 
-.products .box-container .box .content .start i{
+.products .box-container .box .content stars{
+    font-size: 1.5rem;
+}
+
+.products .box-container .box .content .stars i{
     font-size: 1.7rem;
     color: var(--main-color);
 }
@@ -381,8 +386,8 @@ font-size: 4rem;
 }
 
 .review .box-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem,1fr));
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
     gap: 1.5rem;
 }
 
@@ -392,11 +397,11 @@ font-size: 4rem;
     padding:3rem 2rem;
 }
 
-.review .bar-container .box p{
-    font-size: 1.5rem;
-    line-height: 1.8rem;
-    color: #fff;
-    padding: 2rem;
+.review .bax-container .box p{
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color: #ccc;
+    padding: 2rem 0;
 }
  
 .review .box-container .box .user{
@@ -412,11 +417,7 @@ font-size: 4rem;
     color: #fff;
 }
 
-.review .box-container .box h3{
-    padding: 1rem 0;
-    font-size: 2rem;
-    color: #fff;
-}
+
 
 .review .box-container .box .stars i{
     font-size: 1.5rem;
@@ -425,15 +426,15 @@ font-size: 4rem;
 
 .contact .row{
     display: flex;
-    align-items: center;
     background: var(--black);
     flex-wrap: wrap;
+    align-items: center;
     gap:1rem;
 
 }
 
 .contact .row .map{
-    flex:1 1 45rem;
+    flex:1 1 42rem;
     width: 100%;
     object-fit: cover;
 }
@@ -455,8 +456,8 @@ font-size: 4rem;
     align-items: center;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    background: var(--bg);
-    border: var(--black);
+    background: var(--black);
+    border: var(--border);
 }
 
 .contact .row form .inputbox span{
@@ -492,12 +493,12 @@ font-size: 4rem;
     }
 
     .blogs .box-container .box .image{
-        height: 100%;
-        object-fit: cover;
+        height: 25rem;
+        overflow: hidden;
         width: 100%;
     }
 
-    .blogs .box-container .box .image img{
+    .blogs .box-container .box .image img:hover{
         transform: scale(1.2);
     }
 
@@ -507,11 +508,11 @@ font-size: 4rem;
 
     .blogs .box-container .box .content .tittle{
         font-size: 2.5rem;
-        line-height: 1.5rem;
+        line-height: 1.5;
         color: #fff;
     }
 
-    .blogs .box-container .box .content .tittle{
+    .blogs .box-container .box .content .tittle:hover{
         color:var(--main-color);
     }
 
@@ -536,7 +537,7 @@ font-size: 4rem;
     }
 
     .footer .share{
-        padding: 1rem;
+        padding: 1rem 0;
         } 
 
     .footer .share a{
@@ -559,25 +560,25 @@ font-size: 4rem;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 2rem 0;
+    padding: 2rem;
     gap: 1rem;
 }
 
 .footer .links a{
-    padding:.7rem 2rem;
+    padding:.1rem;
     color: #fff;
     border:var(--border);
-    font-size: 2rem;
+    font-size: 1rem;
 }
 
  .footer .links a:hover{
-    background-color: var(--main-color);
+    background:var(--main-color);
  }
 
 
 .footer .credit{
-    font-size: 2rem;
-    color: 3fff;
+    font-size: 1.5rem;
+    color: #fff;
     font-weight: lighter;
     padding: 1.5rem;
 }
@@ -614,10 +615,11 @@ section{
 
     .header .navbar{
         position: absolute;
-        top:100%; right: -100%;
+        top:100%; 
+        right:-250%;
         background: #fff;
         width: 30rem;
-        height: calc(100vh - 9.5rem);
+        height:calc(100vh - 9.5rem);
     
     }
  
