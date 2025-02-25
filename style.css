@@ -127,7 +127,7 @@ font-size: 4rem;
     height: 5rem;
     display: flex;
     align-items: center;
-    transform: scale(0);
+    transform: scaleY(0);
     transform-origin: top;
 }
 .header .search-form.active{
@@ -179,9 +179,9 @@ font-size: 4rem;
 }
 
 .header .cart-items-container .cart-items .fas fa-times{
-    position: relative;
+    position: absolute;
     top: 1rem;
-    right: irem;
+    right: 1rem;
     font-size: 2rem;
     cursor: pointer;
     color: var(--black);
@@ -224,7 +224,7 @@ font-size: 4rem;
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: url() no-repeat;
+    background:url(./images/images15.jpg)  no-repeat;
     background-size: cover;
     background-position: center;;
 }
@@ -240,7 +240,7 @@ font-size: 4rem;
 }
 
 .home .content p{
-    font-size: 1rem;
+    font-size: 2rem;
     font-weight: lighter;
     line-height: 1.8;
     padding: 1rem 0;
@@ -258,7 +258,7 @@ font-size: 4rem;
 }
 
 .about .row .image img{
-    width: 100%;
+    width: 100%;        
 }
 
 .about .row .content{
@@ -266,7 +266,7 @@ font-size: 4rem;
     padding: 2rem;
 }
 
-.about .row.content h3{
+.about .row .content h3{
     font-size: 3rem;
     color: #fff;
 }
@@ -294,7 +294,7 @@ font-size: 4rem;
     height: 10rem;
 }
 
-.menu .box-container  .box h3{
+.menu .box-container .box h3{
     color: #fff;
     font-size: 2rem;
     padding: 1rem 0;
@@ -303,22 +303,23 @@ font-size: 4rem;
 .menu .box-container .box .price{
     color: #fff;
     font-size: 2rem;
-    padding:1rem 0;
+    padding:0.5rem 0;
 }
      
 .menu .box-container .box .price span{
+    color:#fff;
     font-size: 1.5rem;
     text-decoration: line-through;
     font-weight: lighter;
 }
 
-.menu
+
 
 .menu .box-container .box:hover{
     background: #fff;
 }
 
-.menu .box-container .box:hover>*{
+.menu .box-container .box:hover >*{
     color:var(--black);
 }
 
@@ -339,7 +340,7 @@ font-size: 4rem;
     height: 5rem;
     width: 5rem;
     line-height: 5rem;
-    font-size: 10rem;
+    font-size: 2rem;
     border: var(--border);
     color: #fff ;
     margin: .3rem;
@@ -351,7 +352,7 @@ font-size: 4rem;
 
 
 .products .box-container .box .image{
-    padding: 2.5rem;
+    padding: 2rem;
 }
 
 .products .box-container .box .image img{
@@ -365,7 +366,7 @@ font-size: 4rem;
     font-size: 2.5rem;
 }
 
-.products .box-container .box .content stars{
+.products .box-container .box .content .stars{
     font-size: 1.5rem;
 }
 
@@ -385,6 +386,11 @@ font-size: 4rem;
     font-size: 1.5rem;
 }
 
+.review .box-container .box img{
+    width:80%;
+    height: auto;
+}
+
 .review .box-container{
     display:grid;
     grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
@@ -397,7 +403,7 @@ font-size: 4rem;
     padding:3rem 2rem;
 }
 
-.review .bax-container .box p{
+.review .box-container .box p{
     font-size: 1.6rem;
     line-height: 1.8;
     color: #ccc;
@@ -428,13 +434,12 @@ font-size: 4rem;
     display: flex;
     background: var(--black);
     flex-wrap: wrap;
-    align-items: center;
     gap:1rem;
 
 }
 
 .contact .row .map{
-    flex:1 1 42rem;
+    flex:1 1 45rem;
     width: 100%;
     object-fit: cover;
 }
@@ -456,7 +461,7 @@ font-size: 4rem;
     align-items: center;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    background: var(--black);
+    background: var(--bg);
     border: var(--border);
 }
 
@@ -475,6 +480,10 @@ font-size: 4rem;
     background: none;
 }
 
+.blogs .box-container .box img{
+    width:30%;
+    height: auto;
+}
 
     .blogs .box-container{
         display: grid;
@@ -492,27 +501,23 @@ font-size: 4rem;
         width: 100%;
     }
 
-    .blogs .box-container .box .image{
-        height: 25rem;
-        overflow: hidden;
-        width: 100%;
-    }
 
-    .blogs .box-container .box .image img:hover{
-        transform: scale(1.2);
+
+    .blogs .box-container .box .image img{
+        transform: scaleY(1.2);
     }
 
     .blogs .box-container .box .content{
         padding: 2rem;
     }
 
-    .blogs .box-container .box .content .tittle{
+    .blogs .box-container .box .content .title{
         font-size: 2.5rem;
         line-height: 1.5;
         color: #fff;
     }
 
-    .blogs .box-container .box .content .tittle:hover{
+    .blogs .box-container .box .content .title:hover{
         color:var(--main-color);
     }
 
@@ -526,7 +531,7 @@ font-size: 4rem;
     .blogs .box-container .box .content p{
         font-size: 1.6rem;
         line-height: 1.8;
-        color: #ccc;
+        color: #fff;
         padding: 1rem 0;
     }
 
@@ -565,19 +570,20 @@ font-size: 4rem;
 }
 
 .footer .links a{
-    padding:.1rem;
+    padding:7rem 2rem;
     color: #fff;
     border:var(--border);
-    font-size: 1rem;
+    font-size: 2rem;
 }
 
  .footer .links a:hover{
     background:var(--main-color);
+    color: var(--black);
  }
 
 
 .footer .credit{
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #fff;
     font-weight: lighter;
     padding: 1.5rem;
